@@ -20,7 +20,7 @@
 <script>
 import originals from "../assets/half.json";
 import CardFlip from "./CardFlip.vue";
-import ReloadButton from "./ReloadButton.vue"
+import ReloadButton from "./ReloadButton.vue";
 
 export default {
   name: "card-deck",
