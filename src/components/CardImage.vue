@@ -36,5 +36,6 @@ cover(url) {
 img {
   width: 300px;
   border-radius: 3% 3% 3% 3%;
+  background: linear-gradient(hsl(40, 1%, 52%), hsl(40, 1%, 10%));
 }
 </style>

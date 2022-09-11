@@ -23,4 +23,8 @@ export default {
   margin-top: 60px;
   -webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
 }
+
+body {
+    background-color:rgb(23, 31, 40);
+}
 </style>

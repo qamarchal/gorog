@@ -56,6 +56,7 @@ export default {
   computed: {
     position() {
       return `
+        margin-left: 15px;
         padding-left: ${this.index / 2}px;
         padding-bottom: 0.5px;
       `;
@@ -74,9 +75,9 @@ export default {
   transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
 } */
 
-/* .slide-enter-from {
+.slide-enter-from {
   transform: translate(-2000px, 500px);
-} */
+}
 .slide-leave-to {
   transition: transform 0.7s;
   transform: translate(2000px, 500px);

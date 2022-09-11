@@ -8,8 +8,8 @@
           :ref="'card-' + card.id"
           :cardId="card.id"
           :style="'z-index:' + index"
-          :show="index > top - 2"
-          v-if="deal > index / 15 && index <= top"
+          :show="index > top - 2 || index % 8 == 7"
+          v-if="deal > index / 8 && index <= top"
         ></card-flip>
       </Transition>
     </div>
@@ -36,17 +36,17 @@ export default {
   mounted() {
     shuffle(this.originals);
     this.cards = this.originals;
-    // var self = this;
-    // for (let i = 0; i < 4; i++) {
-    //   setTimeout(function () {
-    //     self.deal++;
-    //   }, i * 400);
-    // }
-    // setTimeout(function () {
-    //   self.clickable = true;
-    // }, 1600);
-    this.clickable = true;
-    this.deal = 4;
+    var self = this;
+    for (let i = 0; i < 4; i++) {
+      setTimeout(function () {
+        self.deal++;
+      }, i * 400);
+    }
+    setTimeout(function () {
+      self.clickable = true;
+    }, 1600);
+    // this.clickable = true;
+    // this.deal = 4;
     this.top = this.cards.length - 1;
   },
   methods: {
