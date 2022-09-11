@@ -1,0 +1,122 @@
+[
+  {
+    "id": "1",
+    "type": "king"
+  },
+  {
+    "id": "2",
+    "type": "king"
+  },
+  {
+    "id": "6",
+    "type": "thumbs"
+  },
+  {
+    "id": "7",
+    "type": "thumbs"
+  },
+  {
+    "id": "11",
+    "type": "theme"
+  },
+  {
+    "id": "12",
+    "type": "theme"
+  },
+  {
+    "id": "14",
+    "type": "general"
+  },
+  {
+    "id": "15",
+    "type": "general"
+  },
+  {
+    "id": "16",
+    "type": "alcool"
+  },
+  {
+    "id": "17",
+    "type": "alcool"
+  },
+  {
+    "id": "20",
+    "type": "movies"
+  },
+  {
+    "id": "21",
+    "type": "movies"
+  },
+  {
+    "id": "24",
+    "type": "letters"
+  },
+  {
+    "id": "25",
+    "type": "letters"
+  },
+  {
+    "id": "28",
+    "type": "stone"
+  },
+  {
+    "id": "29",
+    "type": "stone"
+  },
+  {
+    "id": "32",
+    "type": "deal"
+  },
+  {
+    "id": "33",
+    "type": "deal"
+  },
+  {
+    "id": "36",
+    "type": "never"
+  },
+  {
+    "id": "37",
+    "type": "never"
+  },
+  {
+    "id": "40",
+    "type": "gorog"
+  },
+  {
+    "id": "41",
+    "type": "gorog"
+  },
+  {
+    "id": "44",
+    "type": "give"
+  },
+  {
+    "id": "45",
+    "type": "give"
+  },
+  {
+    "id": "48",
+    "type": "freeze"
+  },
+  {
+    "id": "49",
+    "type": "freeze"
+  },
+  {
+    "id": "50",
+    "type": "lutin"
+  },
+  {
+    "id": "51",
+    "type": "korrigan"
+  },
+  {
+    "id": "52",
+    "type": "hobbit"
+  },
+  {
+    "id": "53",
+    "type": "general"
+  }
+]

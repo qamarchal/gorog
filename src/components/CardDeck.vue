@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import originals from "../assets/cards.json";
+import originals from "../assets/half.json";
 import CardFlip from "../components/CardFlip.vue";
 
 export default {
