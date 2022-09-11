@@ -33,6 +33,25 @@ export default {
       clickable: true,
     };
   },
+  methods: {
+    onClick() {
+      if (!this.clickable) {
+        return;
+      }
+      this.clickable = false;
+      if (!this.flipped) {
+        this.flipped = true;
+      } else {
+        this.close = true;
+      }
+      this.grabbed = true;
+      var self = this;
+      setTimeout(function () {
+        self.grabbed = false;
+        self.clickable = true;
+      }, 200);
+    },
+  },
   computed: {
     position() {
       return `
