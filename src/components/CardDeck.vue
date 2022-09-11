@@ -1,5 +1,5 @@
 <template>
-  <div @click.stop="onClick">
+  <div @click.prevent="onClick">
     <div v-for="(card, index) in cards" :key="card.id">
       <Transition name="slide">
         <card-flip
