@@ -1,6 +1,6 @@
 <template>
   <div class="card">
-    <card-image :src="'verso.png'" />
+    <card-image :show="show" :src="'verso.png'" />
   </div>
 </template>
 
@@ -10,5 +10,13 @@ import CardImage from "./CardImage.vue";
 export default {
   components: { CardImage },
   name: "card-verso",
+  props:{
+    show: Boolean
+  }
 };
 </script>
+
+<style scoped>
+* {
+}
+</style>

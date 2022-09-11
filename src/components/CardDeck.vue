@@ -8,7 +8,7 @@
           :ref="'card-' + card.id"
           :cardId="card.id"
           :style="'z-index:' + index"
-          :show="index > top - 3"
+          :show="index > top - 2"
           v-if="deal > index / 15 && index <= top"
         ></card-flip>
       </Transition>

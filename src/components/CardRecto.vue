@@ -1,6 +1,6 @@
 <template>
   <div class="card">
-    <card-image :src="'rectos/' + type + '.png'" />
+    <card-image :show="show" :src="'rectos/' + type + '.png'" />
   </div>
 </template>
 
@@ -12,6 +12,7 @@ export default {
   name: "card-recto",
   props: {
     type: String,
+    show: Boolean
   },
 };
 </script>

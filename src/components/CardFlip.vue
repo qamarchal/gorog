@@ -3,8 +3,8 @@
     <Transition name="slide">
       <div :style="position">
         <div class="card" v-bind:class="{ flipped: flipped }">
-          <card-verso class="card-face card-verso" />
-          <card-recto class="card-face card-recto" :type="this.type" />
+          <card-verso :show="show" class="card-face card-verso" />
+          <card-recto :show="show" class="card-face card-recto" :type="this.type" />
         </div>
         <!-- <div class="debug-id">{{ cardId }}</div> -->
         <!-- <div class="debug-index">{{ index }}</div> -->
