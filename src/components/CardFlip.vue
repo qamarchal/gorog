@@ -92,58 +92,35 @@ export default {
   right: 30px;
 }
 
-/* 
-.scene {
-  width: 200px;
-  height: 260px;
-  border: 1px solid #ccc;
-  margin: 40px 0;
-  perspective: 600px;
-} */
-
 .card-wrapper {
-  /* display: flex; */
   width: 350px;
 }
 
 .card {
-  /* width: 350px; */
-  /* text-align: center; */
-  /* width: fit-content; */
   transition: transform 0.3s;
   transform-style: preserve-3d;
   cursor: pointer;
   position: relative;
   backface-visibility: hidden;
-  /* left: calc(50% - 175px); */
-  /* border: solid orange; */
-  /* display: block; */
-  /* border-width: 1px; */
 }
 
 .card-face {
   position: absolute;
   width: 100%;
-  /* height: 100%; */
   line-height: 260px;
   color: white;
   text-align: center;
   font-weight: bold;
   font-size: 40px;
   backface-visibility: hidden;
-  /* border: solid red;
-  border-width: 10px; */
 }
 
 .card-recto {
   transform: rotateY(180deg);
-  /* border: solid blue;
-  border-width: 10px; */
 }
 
 .flipped {
   transition-delay: 0.1s;
-  /* transition: transform 0.2s; */
   transform: rotateY(180deg);
 }
 

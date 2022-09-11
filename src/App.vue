@@ -3,14 +3,14 @@
 </template>
 
 <script>
-import GameView from './views/GameView.vue'
+import GameView from "./views/GameView.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    GameView
-  }
-}
+    GameView,
+  },
+};
 </script>
 
 <style>
@@ -21,10 +21,14 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
-  -webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  min-height: 100%;
+  min-width: 100%;
+  position: absolute;
+  overflow: hidden;
 }
 
 body {
-    background-color:rgb(23, 31, 40);
+  background-color: rgb(23, 31, 40);
 }
 </style>
