@@ -1,6 +1,6 @@
 <template>
   <main>
-    <card-deck class="card-deck"></card-deck>
+    <card-deck v-if="!loading" class="card-deck"></card-deck>
   </main>
 </template>
 
@@ -8,7 +8,23 @@
 import CardDeck from "../components/CardDeck.vue";
 
 export default {
-  components: { CardDeck }
+  components: { CardDeck },
+  data() {
+    return {
+      loading: true,
+    };
+  },
+  mounted() {
+    const self = this;
+    const img = new Image();
+    img.src = require("@/assets/cards/verso.png");
+    img.onload = () => {
+      self.loading = false;
+    };
+    setTimeout(function () {
+      self.loading = false;
+    }, 3000);
+  },
 };
 </script>
 
@@ -18,5 +34,13 @@ export default {
   margin-right: auto;
   display: table;
   top: 30px;
+}
+
+.loading {
+  background: transparent
+    url("https://miro.medium.com/max/882/1*9EBHIOzhE1XfMYoKz1JcsQ.gif") center
+    no-repeat;
+  height: 400px;
+  width: 400px;
 }
 </style>
