@@ -8,7 +8,7 @@
 import CardDeck from "../components/CardDeck.vue";
 
 export default {
-  components: { CardDeck },
+  components: { CardDeck }
 };
 </script>
 

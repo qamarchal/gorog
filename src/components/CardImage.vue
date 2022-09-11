@@ -1,6 +1,6 @@
 <template>
   <div class="card-image">
-    <img v-if="show" :src="cover(src)" />
+    <img v-if="show" :src="cover(src)" rel="preload" />
   </div>
 </template>
 
@@ -9,15 +9,13 @@ export default {
   name: "card-image",
   props: {
     src: String,
-    show: Boolean
+    show: Boolean,
   },
-  methods : {
-
-cover(url) {
-  return require('@/assets/cards/' + url);
-}
-
-  }
+  methods: {
+    cover(url) {
+      return require("@/assets/cards/" + url);
+    },
+  },
 };
 </script>
 

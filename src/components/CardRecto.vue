@@ -12,7 +12,7 @@ export default {
   name: "card-recto",
   props: {
     type: String,
-    show: Boolean
+    show: Boolean,
   },
 };
 </script>
