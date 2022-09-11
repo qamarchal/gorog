@@ -1,5 +1,6 @@
 <template>
   <div @click.prevent="onClick">
+    <reload-button></reload-button>
     <div v-for="(card, index) in cards" :key="card.id">
       <Transition name="slide">
         <card-flip
@@ -7,7 +8,7 @@
           :index="index"
           :ref="'card-' + card.id"
           :cardId="card.id"
-          :style="'z-index:' + index"
+          :style="'z-index:' + (index + 1)"
           :show="index > top - 2 || index % 8 == 7"
           v-if="deal > index / 8 && index <= top"
         ></card-flip>
@@ -18,11 +19,12 @@
 
 <script>
 import originals from "../assets/half.json";
-import CardFlip from "../components/CardFlip.vue";
+import CardFlip from "./CardFlip.vue";
+import ReloadButton from "./ReloadButton.vue"
 
 export default {
   name: "card-deck",
-  components: { CardFlip },
+  components: { CardFlip, ReloadButton },
   data() {
     return {
       originals: originals,

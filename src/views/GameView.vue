@@ -17,10 +17,10 @@ export default {
   mounted() {
     const self = this;
     const img = new Image();
-    img.src = require("@/assets/cards/verso.png");
     img.onload = () => {
       self.loading = false;
     };
+    img.src = require("@/assets/cards/verso.png");
     setTimeout(function () {
       self.loading = false;
     }, 3000);
