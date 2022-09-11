@@ -23,6 +23,7 @@ export default {
     type: String,
     index: Number,
     cardId: String,
+    show: Boolean
   },
   components: { CardRecto, CardVerso },
   data() {
@@ -73,9 +74,9 @@ export default {
   transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
 } */
 
-.slide-enter-from {
+/* .slide-enter-from {
   transform: translate(-2000px, 500px);
-}
+} */
 .slide-leave-to {
   transition: transform 0.7s;
   transform: translate(2000px, 500px);
