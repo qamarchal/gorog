@@ -15,11 +15,12 @@ export default {
 
 <style>
 #app {
+  font-size: 22px;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #647c93;
   margin-top: 60px;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   min-height: 100%;

@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import originals from "../assets/half.json";
+import originals from "../assets/cards.json";
 import CardFlip from "./CardFlip.vue";
 import ReloadButton from "./ReloadButton.vue";
 

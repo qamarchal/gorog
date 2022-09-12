@@ -8,18 +8,6 @@
     "type": "king"
   },
   {
-    "id": "3",
-    "type": "king"
-  },
-  {
-    "id": "4",
-    "type": "thumbs"
-  },
-  {
-    "id": "5",
-    "type": "thumbs"
-  },
-  {
     "id": "6",
     "type": "thumbs"
   },
@@ -28,28 +16,12 @@
     "type": "thumbs"
   },
   {
-    "id": "8",
-    "type": "theme"
-  },
-  {
-    "id": "9",
-    "type": "theme"
-  },
-  {
-    "id": "10",
-    "type": "theme"
-  },
-  {
     "id": "11",
     "type": "theme"
   },
   {
     "id": "12",
     "type": "theme"
-  },
-  {
-    "id": "13",
-    "type": "general"
   },
   {
     "id": "14",
@@ -68,28 +40,12 @@
     "type": "alcool"
   },
   {
-    "id": "18",
-    "type": "movies"
-  },
-  {
-    "id": "19",
-    "type": "movies"
-  },
-  {
     "id": "20",
     "type": "movies"
   },
   {
     "id": "21",
     "type": "movies"
-  },
-  {
-    "id": "22",
-    "type": "letters"
-  },
-  {
-    "id": "23",
-    "type": "letters"
   },
   {
     "id": "24",
@@ -100,28 +56,12 @@
     "type": "letters"
   },
   {
-    "id": "26",
-    "type": "stone"
-  },
-  {
-    "id": "27",
-    "type": "stone"
-  },
-  {
     "id": "28",
     "type": "stone"
   },
   {
     "id": "29",
     "type": "stone"
-  },
-  {
-    "id": "30",
-    "type": "deal"
-  },
-  {
-    "id": "31",
-    "type": "deal"
   },
   {
     "id": "32",
@@ -132,28 +72,12 @@
     "type": "deal"
   },
   {
-    "id": "34",
-    "type": "never"
-  },
-  {
-    "id": "35",
-    "type": "never"
-  },
-  {
     "id": "36",
     "type": "never"
   },
   {
     "id": "37",
     "type": "never"
-  },
-  {
-    "id": "38",
-    "type": "gorog"
-  },
-  {
-    "id": "39",
-    "type": "gorog"
   },
   {
     "id": "40",
@@ -164,28 +88,12 @@
     "type": "gorog"
   },
   {
-    "id": "42",
-    "type": "give"
-  },
-  {
-    "id": "43",
-    "type": "give"
-  },
-  {
     "id": "44",
     "type": "give"
   },
   {
     "id": "45",
     "type": "give"
-  },
-  {
-    "id": "46",
-    "type": "freeze"
-  },
-  {
-    "id": "47",
-    "type": "freeze"
   },
   {
     "id": "48",
