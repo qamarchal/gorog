@@ -31,5 +31,6 @@ export default {
 
 body {
   background-color: rgb(23, 31, 40);
+  overscroll-behavior-y: contain;
 }
 </style>
