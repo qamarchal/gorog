@@ -3,35 +3,35 @@
     <Transition name="slide">
       <div :style="position">
         <div class="card" v-bind:class="{ flipped: flipped }">
-          <card-verso :show="show" class="card-face card-verso" />
-          <card-recto :show="show" class="card-face card-recto" :type="this.type" />
+          <card-image :show="show" :src="versoSrc" class="card-image" />
+          <card-image :show="show" :src="rectoSrc" class="card-image card-recto" />
         </div>
-        <!-- <div class="debug-id">{{ cardId }}</div> -->
-        <!-- <div class="debug-index">{{ index }}</div> -->
       </div>
     </Transition>
   </div>
 </template>
 
 <script>
-import CardRecto from "../components/CardRecto.vue";
-import CardVerso from "../components/CardVerso.vue";
+import CardImage from "../components/CardImage.vue";
 
 export default {
   name: "card-flip",
   props: {
+    language: String,
     type: String,
     index: Number,
     cardId: String,
-    show: Boolean
+    show: Boolean,
   },
-  components: { CardRecto, CardVerso },
+  components: { CardImage },
   data() {
     return {
       close: false,
       flipped: false,
       grabbed: false,
       clickable: true,
+      versoSrc: `${this.language}/verso.png`,
+      rectoSrc: `${this.language}/rectos/${this.type}.png`,
     };
   },
   methods: {
@@ -104,7 +104,7 @@ export default {
   backface-visibility: hidden;
 }
 
-.card-face {
+.card-image {
   position: absolute;
   width: 100%;
   line-height: 260px;

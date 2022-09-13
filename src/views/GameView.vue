@@ -5,7 +5,7 @@
       :size="size + 1"
       :loaded="loaded"
     ></loading-spinner>
-    <card-deck v-if="!loading" class="card-deck"></card-deck>
+    <card-deck v-if="!loading" :language="language" class="card-deck"></card-deck>
   </main>
 </template>
 
@@ -16,6 +16,9 @@ import LoadingSpinner from "@/components/LoadingSpinner.vue";
 
 export default {
   components: { CardDeck, LoadingSpinner },
+  props: {
+    language: String,
+  },
   data() {
     return {
       cards: cards,
@@ -33,15 +36,13 @@ export default {
       verso.onload = () => {
         self.loaded++;
       };
-      verso.src = require("@/assets/cards/verso.png");
+      verso.src = require(`@/assets/cards/${this.language}/verso.png`);
       for (let id in this.cards) {
         const recto = new Image();
         recto.onload = () => {
           self.loaded++;
         };
-        recto.src = require("@/assets/cards/rectos/" +
-          this.cards[id].type +
-          ".png");
+        recto.src = require(`@/assets/cards/${this.language}/rectos/${this.cards[id].type}.png`);
       }
     },
   },
@@ -59,13 +60,5 @@ export default {
   margin-right: auto;
   display: table;
   top: 30px;
-}
-
-.loading {
-  background: transparent
-    url("https://miro.medium.com/max/882/1*9EBHIOzhE1XfMYoKz1JcsQ.gif") center
-    no-repeat;
-  height: 400px;
-  width: 400px;
 }
 </style>

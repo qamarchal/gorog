@@ -1,5 +1,5 @@
 <template>
-  <GameView />
+  <GameView :language="'fr'" />
 </template>
 
 <script>

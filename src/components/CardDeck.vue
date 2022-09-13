@@ -4,6 +4,7 @@
     <div v-for="(card, index) in cards" :key="card.id">
       <Transition name="slide">
         <card-flip
+          :language="language"
           :type="card.type"
           :index="index"
           :ref="'card-' + card.id"
@@ -25,6 +26,9 @@ import ReloadButton from "./ReloadButton.vue";
 export default {
   name: "card-deck",
   components: { CardFlip, ReloadButton },
+  props: {
+    language: String,
+  },
   data() {
     return {
       originals: originals,
